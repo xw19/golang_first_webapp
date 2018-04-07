@@ -1,0 +1,15 @@
+<h1>{{.PageTitle}}</h1>
+<table>
+    <tr>
+        <th></td>ID</th>
+        <th>First name</th>
+        <th>Last name</th>        
+    </tr>
+    {{range .Persons}}
+        <tr>
+            <td>{{.ID}}</td>
+            <td>{{.Firstname}}</td>
+            <td>{{.Lastname}}</td>
+        </tr>
+    {{ end }}
+</table>
